@@ -1,0 +1,6 @@
+.card {
+  background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius);
+  box-shadow: var(--shadow); overflow: hidden; position: relative;
+  transition: box-shadow var(--duration) var(--ease), transform var(--duration) var(--ease);
+}
+.card:hover, .card:focus-within { box-shadow: var(--shadow-lift); transform: translateY(-2px); }

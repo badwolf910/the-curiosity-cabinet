@@ -1,0 +1,4 @@
+.grid { list-style: none; padding: 0; margin: var(--space-5) 0; display: grid; gap: var(--space-5); grid-template-columns: 1fr; }
+.grid > li { min-width: 0; }
+@media (min-width: 40rem) { .grid:not(.list) { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 64rem) { .grid:not(.list) { grid-template-columns: repeat(3, 1fr); } }

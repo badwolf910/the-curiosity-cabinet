@@ -1,0 +1,5 @@
+.bar { display: grid; gap: var(--space-3); grid-template-columns: 1fr; align-items: end; }
+.reset { justify-self: start; }
+@media (min-width: 48rem) {
+  .bar { grid-template-columns: 2fr 1fr 1fr auto; }
+}
