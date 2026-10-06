@@ -9,10 +9,11 @@ export function Plate({ artifact, size = 'md' }) {
   const wiki = useWikiSummary(artifact.wiki);
   const [failed, setFailed] = useState(false);
   const own = artifact.image && !failed;
+  const crop = size === 'sm' ? artifact.cropSm ?? artifact.crop : artifact.crop;
   return (
     <div className={`plate plate--${size}`} style={{ '--hue': artifact.hue }}>
       {own ? (
-        <ImageCrop src={artifact.image} alt={size === 'sm' ? '' : artifact.title} {...artifact.crop} onError={() => setFailed(true)} />
+        <ImageCrop src={artifact.image} alt={size === 'sm' ? '' : artifact.title} {...crop} onError={() => setFailed(true)} />
       ) : wiki?.image ? (
         <img src={wiki.image} alt={size === 'sm' ? '' : artifact.title} loading="lazy" />
       ) : (

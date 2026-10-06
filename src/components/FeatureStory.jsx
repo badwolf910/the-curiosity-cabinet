@@ -32,11 +32,20 @@ export default function FeatureStory({ artifact }) {
       </section>
 
       <section aria-labelledby="expert-h">
-        <h2 id="expert-h">Expert commentary</h2>
+        <h2 id="expert-h">Expert interpretation</h2>
         <figure className="callout">
-          <blockquote><p>“{f.expert.quote}”</p></blockquote>
-          <figcaption>— {f.expert.name}, {f.expert.role}</figcaption>
+          <blockquote><p>According to {f.expert.name} of The Field Museum, {f.expert.summary.charAt(0).toLowerCase() + f.expert.summary.slice(1)}</p></blockquote>
+          <figcaption>{f.expert.name}, {f.expert.role}</figcaption>
         </figure>
+      </section>
+
+      <section aria-labelledby="matters-h">
+        <h2 id="matters-h">Why it matters</h2>
+        <dl className="matters">
+          {f.matters.map((m) => (
+            <div key={m.title}><dt>{m.title}</dt><dd>{m.text}</dd></div>
+          ))}
+        </dl>
       </section>
 
       <section aria-labelledby="views-h">
@@ -54,7 +63,7 @@ export default function FeatureStory({ artifact }) {
       </section>
 
       <section aria-labelledby="chain-h">
-        <h2 id="chain-h">Follow the thread</h2>
+        <h2 id="chain-h">Related objects</h2>
         <ol className="chain">
           {f.chain.map((c) => (
             <li key={c.label}>
