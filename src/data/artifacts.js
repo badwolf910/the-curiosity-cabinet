@@ -17,12 +17,13 @@ export const ARTIFACTS = [
     facts: ['Five-fold symmetry inherited from the living animal', 'Concentric silica bands grew inward from the stem’s opening', 'Found in gravel from a local quarry'],
     tags: ['fossil', 'crinoid', 'agate', 'iowa', 'mississippian'], related: ['ammonite', 'lichtenberg-figure', 'mantis-shrimp-eye'],
     feature: {
-      subtitle: 'A fossil found in roadside gravel near Keokuk, Iowa',
+      subtitle: 'A fossil found in roadside gravel near Keokuk, Iowa, by Danielle and Lincoln Smith',
       discovery: [
-        'In 2025, while living a few miles northwest of Keokuk, Iowa, I noticed an unusual fossil in freshly spread road gravel. The specimen displayed a striking five-fold pattern unlike any crinoid fossil I had previously encountered.',
+        'In 2025, while living a few miles northwest of Keokuk, Iowa, Danielle and Lincoln Smith noticed an unusual fossil in freshly spread road gravel. The specimen displayed a striking five-fold pattern unlike any crinoid fossil they had previously encountered.',
         'Further searching uncovered a second specimen and numerous smaller fragments from the same gravel source, suggesting the material originated from a fossil-rich quarry layer somewhere in the region.',
       ],
       specimen: [
+        { label: 'Found by', items: ['Danielle and Lincoln Smith', '2025'] },
         { label: 'Location', items: ['Southeastern Iowa', 'Near Keokuk', 'Found in road gravel sourced from a local quarry'] },
         { label: 'Age', items: ['Likely Mississippian Period', 'Approximately 330–350 million years old'] },
         { label: 'Classification', items: ['Crinoid (sea lily)', 'Echinoderm'] },
