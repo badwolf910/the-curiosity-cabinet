@@ -1,0 +1,15 @@
+.card { display: flex; flex-direction: column; height: 100%; }
+.image { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--color-parchment-deep); }
+.body { padding: var(--space-4); }
+.meta { font-size: var(--text-sm); color: var(--color-ink-muted); margin-bottom: var(--space-2); }
+.title { margin-bottom: var(--space-2); }
+.link { color: inherit; text-decoration: none; }
+.link::after { content: ''; position: absolute; inset: 0; }
+.link:hover { text-decoration: underline; }
+.desc { font-size: var(--text-sm); color: var(--color-ink-muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.tags { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+.bookmark { position: absolute; top: var(--space-2); right: var(--space-2); z-index: 1; }
+@media (min-width: 40rem) {
+  .list { flex-direction: row; }
+  .list .image { width: 16rem; aspect-ratio: auto; height: auto; flex-shrink: 0; }
+}

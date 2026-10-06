@@ -1,0 +1,4 @@
+.button { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-gold-deep); font-size: 1.25rem; cursor: pointer; transition: background var(--duration) var(--ease); }
+.button:hover { background: var(--color-parchment-deep); }
+.saved { background: var(--color-brown); color: var(--color-gold); border-color: var(--color-brown); }
+.saved:hover { background: #54402c; }

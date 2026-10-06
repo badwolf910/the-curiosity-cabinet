@@ -1,0 +1,9 @@
+.detail { padding: var(--space-5) 0 var(--space-8); }
+.hero { width: 100%; max-height: 28rem; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); margin: var(--space-4) 0; background: var(--color-parchment-deep); }
+.header { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-4); }
+.meta { font-size: var(--text-sm); color: var(--color-ink-muted); margin: 0; }
+.description { font-size: var(--text-lg); max-width: 46rem; }
+.facts { display: grid; grid-template-columns: max-content 1fr; gap: var(--space-2) var(--space-5); margin: var(--space-5) 0; }
+.facts dt { font-weight: 600; }
+.facts dd { margin: 0; }
+.tagLink { text-decoration: none; margin-right: var(--space-1); }

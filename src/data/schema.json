@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Artifact list",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "title", "category", "era", "year", "image", "description", "provenance", "relatedArtifacts", "tags"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+      "title": { "type": "string" },
+      "category": { "enum": ["curiosities", "scientific-instruments", "ancient-objects", "oddities", "forgotten-technologies"] },
+      "era": { "enum": ["Prehistoric", "Ancient", "Medieval", "Renaissance", "Industrial", "Modern", "Contemporary"] },
+      "year": { "type": "integer", "description": "Negative values are BCE" },
+      "image": { "type": "string" },
+      "description": { "type": "string" },
+      "provenance": { "type": "string" },
+      "relatedArtifacts": { "type": "array", "items": { "type": "string" } },
+      "tags": { "type": "array", "items": { "type": "string" } }
+    }
+  }
+}

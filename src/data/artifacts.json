@@ -1,0 +1,574 @@
+[
+  {
+    "id": "amber-moth",
+    "title": "The Amber Moth",
+    "category": "curiosities",
+    "era": "Prehistoric",
+    "year": -40000,
+    "image": "/images/amber-moth.svg",
+    "description": "A moth with iridescent wings, caught mid-flutter in a drop of resin and kept intact for millennia.",
+    "provenance": "Said to have been recovered from a glacial moraine by a surveyor in 1887; catalogued by the Cabinet in 1902.",
+    "relatedArtifacts": [
+      "bone-flute-of-the-glacier",
+      "whale-ear-bone-bell"
+    ],
+    "tags": [
+      "insects",
+      "resin",
+      "preservation"
+    ]
+  },
+  {
+    "id": "bone-flute-of-the-glacier",
+    "title": "Bone Flute of the Glacier",
+    "category": "ancient-objects",
+    "era": "Prehistoric",
+    "year": -38000,
+    "image": "/images/bone-flute-of-the-glacier.svg",
+    "description": "A three-holed flute carved from a vulture wing bone, still able to produce a clear, haunting note.",
+    "provenance": "Found wrapped in birch bark inside a cave shelter; acquired through a field exchange in 1931.",
+    "relatedArtifacts": [
+      "amber-moth",
+      "tablet-of-the-salt-merchant"
+    ],
+    "tags": [
+      "music",
+      "bone",
+      "cave"
+    ]
+  },
+  {
+    "id": "ochre-star-map",
+    "title": "Ochre Star Map",
+    "category": "scientific-instruments",
+    "era": "Prehistoric",
+    "year": -30000,
+    "image": "/images/ochre-star-map.svg",
+    "description": "A painted slab of stone whose dots seem to trace the winter stars above the hunters' horizon.",
+    "provenance": "Reported by a shepherd in 1954; its pigment was analysed in 1978.",
+    "relatedArtifacts": [
+      "sundial-of-the-seven-shadows",
+      "astrolabe-of-al-fazari"
+    ],
+    "tags": [
+      "astronomy",
+      "pigment",
+      "stars"
+    ]
+  },
+  {
+    "id": "tablet-of-the-salt-merchant",
+    "title": "Tablet of the Salt Merchant",
+    "category": "ancient-objects",
+    "era": "Ancient",
+    "year": -2400,
+    "image": "/images/tablet-of-the-salt-merchant.svg",
+    "description": "A clay tablet recording a dispute over a shipment of salt, with an apology scrawled in the margin.",
+    "provenance": "Recovered from a river-delta archive; transferred to the Cabinet with a bequest in 1911.",
+    "relatedArtifacts": [
+      "bone-flute-of-the-glacier",
+      "antikythera-echo"
+    ],
+    "tags": [
+      "writing",
+      "trade",
+      "clay"
+    ]
+  },
+  {
+    "id": "sundial-of-the-seven-shadows",
+    "title": "Sundial of the Seven Shadows",
+    "category": "scientific-instruments",
+    "era": "Ancient",
+    "year": -300,
+    "image": "/images/sundial-of-the-seven-shadows.svg",
+    "description": "A stone dial with seven gnomons, each telling a different civic hour in a city that no longer exists.",
+    "provenance": "Purchased at auction in 1899, provenance traced to a harbour temple.",
+    "relatedArtifacts": [
+      "ochre-star-map",
+      "antikythera-echo"
+    ],
+    "tags": [
+      "time",
+      "astronomy",
+      "stone"
+    ]
+  },
+  {
+    "id": "antikythera-echo",
+    "title": "The Antikythera Echo",
+    "category": "scientific-instruments",
+    "era": "Ancient",
+    "year": -100,
+    "image": "/images/antikythera-echo.svg",
+    "description": "A corroded bronze gear train, a replica fragment hinting at a lost tradition of analogue computing.",
+    "provenance": "Cast from a wreck-recovered original; gifted by a diving society in 1960.",
+    "relatedArtifacts": [
+      "sundial-of-the-seven-shadows",
+      "astrolabe-of-al-fazari",
+      "clockwork-sparrow"
+    ],
+    "tags": [
+      "gears",
+      "astronomy",
+      "bronze"
+    ]
+  },
+  {
+    "id": "roman-glass-tear-vial",
+    "title": "Roman Glass Tear Vial",
+    "category": "ancient-objects",
+    "era": "Ancient",
+    "year": 50,
+    "image": "/images/roman-glass-tear-vial.svg",
+    "description": "A slender blue-green vial, reputedly used to gather the tears of mourners.",
+    "provenance": "Excavated from a roadside tomb; entered the collection in 1923.",
+    "relatedArtifacts": [
+      "tablet-of-the-salt-merchant",
+      "jade-cicada"
+    ],
+    "tags": [
+      "glass",
+      "funerary",
+      "ritual"
+    ]
+  },
+  {
+    "id": "jade-cicada",
+    "title": "Jade Cicada",
+    "category": "ancient-objects",
+    "era": "Ancient",
+    "year": -100,
+    "image": "/images/jade-cicada.svg",
+    "description": "A palm-sized cicada carved from jade, placed on the tongue of the departed as a promise of rebirth.",
+    "provenance": "Acquired from a private collector in 1947 with a handwritten label.",
+    "relatedArtifacts": [
+      "roman-glass-tear-vial",
+      "amber-moth"
+    ],
+    "tags": [
+      "jade",
+      "funerary",
+      "insects"
+    ]
+  },
+  {
+    "id": "astrolabe-of-al-fazari",
+    "title": "Astrolabe of al-Fazari",
+    "category": "scientific-instruments",
+    "era": "Medieval",
+    "year": 800,
+    "image": "/images/astrolabe-of-al-fazari.svg",
+    "description": "A brass astrolabe engraved with the names of stars in two scripts, one added by a later owner.",
+    "provenance": "Passed through at least four owners before arriving in 1905.",
+    "relatedArtifacts": [
+      "antikythera-echo",
+      "mappa-mundi-fragment",
+      "ochre-star-map"
+    ],
+    "tags": [
+      "astronomy",
+      "navigation",
+      "brass"
+    ]
+  },
+  {
+    "id": "mappa-mundi-fragment",
+    "title": "Mappa Mundi Fragment",
+    "category": "curiosities",
+    "era": "Medieval",
+    "year": 1290,
+    "image": "/images/mappa-mundi-fragment.svg",
+    "description": "A vellum scrap showing sea monsters, a dog-headed people, and a quiet corner marked \"here be dragons\".",
+    "provenance": "Salvaged from a binding in a monastery library; conserved in 1966.",
+    "relatedArtifacts": [
+      "astrolabe-of-al-fazari",
+      "bestiary-of-impossible-birds"
+    ],
+    "tags": [
+      "maps",
+      "vellum",
+      "monsters"
+    ]
+  },
+  {
+    "id": "bestiary-of-impossible-birds",
+    "title": "Bestiary of Impossible Birds",
+    "category": "curiosities",
+    "era": "Medieval",
+    "year": 1250,
+    "image": "/images/bestiary-of-impossible-birds.svg",
+    "description": "An illuminated manuscript of birds that never lived, with notes on their habits and tempers.",
+    "provenance": "Copied in a scriptorium; later owned by a notable naturalist.",
+    "relatedArtifacts": [
+      "mappa-mundi-fragment",
+      "cabinet-of-wax-fruits"
+    ],
+    "tags": [
+      "manuscript",
+      "birds",
+      "illumination"
+    ]
+  },
+  {
+    "id": "plague-doctor-beak-reliquary",
+    "title": "Plague Doctor's Beak Reliquary",
+    "category": "oddities",
+    "era": "Medieval",
+    "year": 1348,
+    "image": "/images/plague-doctor-beak-reliquary.svg",
+    "description": "A leather beak stuffed with herbs and a cloth that still smells faintly of juniper and fear.",
+    "provenance": "Found in a cellar during demolition in 1912.",
+    "relatedArtifacts": [
+      "mappa-mundi-fragment",
+      "apothecary-of-lost-remedies"
+    ],
+    "tags": [
+      "medicine",
+      "plague",
+      "leather"
+    ]
+  },
+  {
+    "id": "apothecary-of-lost-remedies",
+    "title": "Apothecary of Lost Remedies",
+    "category": "curiosities",
+    "era": "Renaissance",
+    "year": 1560,
+    "image": "/images/apothecary-of-lost-remedies.svg",
+    "description": "A travelling chest of 40 labelled phials, many of whose ingredients no one can now identify.",
+    "provenance": "Inventoried in a merchant's will; found in an attic in 1938.",
+    "relatedArtifacts": [
+      "plague-doctor-beak-reliquary",
+      "cabinet-of-wax-fruits"
+    ],
+    "tags": [
+      "medicine",
+      "chest",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "cabinet-of-wax-fruits",
+    "title": "Cabinet of Wax Fruits",
+    "category": "oddities",
+    "era": "Renaissance",
+    "year": 1590,
+    "image": "/images/cabinet-of-wax-fruits.svg",
+    "description": "A drawer of lifelike wax fruit made to be admired, studied, and (embarrassingly) bitten by the unwary.",
+    "provenance": "Part of a princely collection dispersed in the seventeenth century.",
+    "relatedArtifacts": [
+      "bestiary-of-impossible-birds",
+      "apothecary-of-lost-remedies"
+    ],
+    "tags": [
+      "wax",
+      "collecting",
+      "food"
+    ]
+  },
+  {
+    "id": "galileos-lost-lens",
+    "title": "Galileo's Lost Lens",
+    "category": "scientific-instruments",
+    "era": "Renaissance",
+    "year": 1609,
+    "image": "/images/galileos-lost-lens.svg",
+    "description": "A small, slightly cloudy lens ground for a telescope, with a thumbprint pressed into the glass mount.",
+    "provenance": "Attributed by letter to a workshop in Padua; arrived in 1920.",
+    "relatedArtifacts": [
+      "astrolabe-of-al-fazari",
+      "orrery-of-the-small-moons"
+    ],
+    "tags": [
+      "optics",
+      "astronomy",
+      "glass"
+    ]
+  },
+  {
+    "id": "orrery-of-the-small-moons",
+    "title": "Orrery of the Small Moons",
+    "category": "scientific-instruments",
+    "era": "Industrial",
+    "year": 1790,
+    "image": "/images/orrery-of-the-small-moons.svg",
+    "description": "A brass planetary model whose clockwork includes moons not discovered for another century.",
+    "provenance": "Built by an instrument maker for a country gentleman.",
+    "relatedArtifacts": [
+      "galileos-lost-lens",
+      "clockwork-sparrow"
+    ],
+    "tags": [
+      "astronomy",
+      "clockwork",
+      "brass"
+    ]
+  },
+  {
+    "id": "clockwork-sparrow",
+    "title": "Clockwork Sparrow",
+    "category": "forgotten-technologies",
+    "era": "Industrial",
+    "year": 1780,
+    "image": "/images/clockwork-sparrow.svg",
+    "description": "A tiny automaton that sings, flaps and cocks its head — then falls silent mid-song.",
+    "provenance": "Recorded in an inventory of a Swiss maker; arrived in 1928.",
+    "relatedArtifacts": [
+      "antikythera-echo",
+      "orrery-of-the-small-moons",
+      "difference-engine-gear"
+    ],
+    "tags": [
+      "automaton",
+      "gears",
+      "birds"
+    ]
+  },
+  {
+    "id": "difference-engine-gear",
+    "title": "Difference Engine Gear",
+    "category": "forgotten-technologies",
+    "era": "Industrial",
+    "year": 1832,
+    "image": "/images/difference-engine-gear.svg",
+    "description": "A single precision gear from a mechanical calculator that was never completed in its maker's lifetime.",
+    "provenance": "Salvaged from a workshop clear-out; given by a descendant in 1950.",
+    "relatedArtifacts": [
+      "clockwork-sparrow",
+      "pneumatic-letter-capsule"
+    ],
+    "tags": [
+      "computing",
+      "gears",
+      "brass"
+    ]
+  },
+  {
+    "id": "pneumatic-letter-capsule",
+    "title": "Pneumatic Letter Capsule",
+    "category": "forgotten-technologies",
+    "era": "Industrial",
+    "year": 1875,
+    "image": "/images/pneumatic-letter-capsule.svg",
+    "description": "A felt-lined cylinder that once whooshed messages through tubes under the city at tremendous speed.",
+    "provenance": "Retrieved from a decommissioned exchange in 1969.",
+    "relatedArtifacts": [
+      "difference-engine-gear",
+      "magic-lantern-of-dr-vale"
+    ],
+    "tags": [
+      "mail",
+      "air",
+      "city"
+    ]
+  },
+  {
+    "id": "magic-lantern-of-dr-vale",
+    "title": "Magic Lantern of Dr. Vale",
+    "category": "forgotten-technologies",
+    "era": "Industrial",
+    "year": 1880,
+    "image": "/images/magic-lantern-of-dr-vale.svg",
+    "description": "A lantern with hand-painted glass slides, used in lectures to summon ghosts, comets and sea serpents.",
+    "provenance": "Owned by an itinerant lecturer; auctioned in 1974.",
+    "relatedArtifacts": [
+      "pneumatic-letter-capsule",
+      "phonograph-cylinder-unknown"
+    ],
+    "tags": [
+      "projection",
+      "glass",
+      "theatre"
+    ]
+  },
+  {
+    "id": "phonograph-cylinder-unknown",
+    "title": "Unknown Phonograph Cylinder",
+    "category": "oddities",
+    "era": "Industrial",
+    "year": 1895,
+    "image": "/images/phonograph-cylinder-unknown.svg",
+    "description": "A wax cylinder labelled only \"Do not play on Sundays\". Its contents remain contested.",
+    "provenance": "Found in a piano bench, accessioned in 1981.",
+    "relatedArtifacts": [
+      "magic-lantern-of-dr-vale",
+      "theremin-prototype"
+    ],
+    "tags": [
+      "sound",
+      "wax",
+      "mystery"
+    ]
+  },
+  {
+    "id": "taxidermy-mermaid",
+    "title": "The Taxidermy Mermaid",
+    "category": "oddities",
+    "era": "Industrial",
+    "year": 1850,
+    "image": "/images/taxidermy-mermaid.svg",
+    "description": "A sewn marvel of monkey and fish, once exhibited as a sea-maiden and now celebrated as a masterpiece of hoax.",
+    "provenance": "Displayed in a travelling show; bought by the Cabinet in 1935.",
+    "relatedArtifacts": [
+      "cabinet-of-wax-fruits",
+      "phonograph-cylinder-unknown"
+    ],
+    "tags": [
+      "hoax",
+      "taxidermy",
+      "sea"
+    ]
+  },
+  {
+    "id": "theremin-prototype",
+    "title": "Theremin Prototype",
+    "category": "forgotten-technologies",
+    "era": "Modern",
+    "year": 1928,
+    "image": "/images/theremin-prototype.svg",
+    "description": "An early touchless instrument played by waving the hands in the air; its antennae hum quietly.",
+    "provenance": "Built in a Moscow lab; arrived via a collector in 1967.",
+    "relatedArtifacts": [
+      "phonograph-cylinder-unknown",
+      "vacuum-tube-radio"
+    ],
+    "tags": [
+      "music",
+      "electronics",
+      "sound"
+    ]
+  },
+  {
+    "id": "vacuum-tube-radio",
+    "title": "Vacuum Tube Radio",
+    "category": "forgotten-technologies",
+    "era": "Modern",
+    "year": 1935,
+    "image": "/images/vacuum-tube-radio.svg",
+    "description": "A walnut-cased radio whose tubes glow amber, tuned to stations that no longer broadcast.",
+    "provenance": "Donated from a family kitchen in 1990.",
+    "relatedArtifacts": [
+      "theremin-prototype",
+      "cloud-chamber"
+    ],
+    "tags": [
+      "electronics",
+      "radio",
+      "glass"
+    ]
+  },
+  {
+    "id": "cloud-chamber",
+    "title": "Cloud Chamber",
+    "category": "scientific-instruments",
+    "era": "Modern",
+    "year": 1932,
+    "image": "/images/cloud-chamber.svg",
+    "description": "A glass chamber where invisible particles leave brief white trails through vapour.",
+    "provenance": "Built in a university lab; gifted in 1972.",
+    "relatedArtifacts": [
+      "vacuum-tube-radio",
+      "geiger-counter-prototype"
+    ],
+    "tags": [
+      "physics",
+      "glass",
+      "particles"
+    ]
+  },
+  {
+    "id": "geiger-counter-prototype",
+    "title": "Geiger Counter Prototype",
+    "category": "scientific-instruments",
+    "era": "Modern",
+    "year": 1928,
+    "image": "/images/geiger-counter-prototype.svg",
+    "description": "A handmade counter that clicks as it senses what the eye cannot.",
+    "provenance": "Lab-made device acquired in 1958.",
+    "relatedArtifacts": [
+      "cloud-chamber",
+      "sputnik-pocket-model"
+    ],
+    "tags": [
+      "physics",
+      "radiation",
+      "sound"
+    ]
+  },
+  {
+    "id": "sputnik-pocket-model",
+    "title": "Sputnik Pocket Model",
+    "category": "curiosities",
+    "era": "Modern",
+    "year": 1957,
+    "image": "/images/sputnik-pocket-model.svg",
+    "description": "A polished steel sphere with four antennae, sold as a souvenir the year a beeping moon crossed the sky.",
+    "provenance": "Acquired from a stall in 1958.",
+    "relatedArtifacts": [
+      "geiger-counter-prototype",
+      "golden-record-copy"
+    ],
+    "tags": [
+      "space",
+      "souvenir",
+      "steel"
+    ]
+  },
+  {
+    "id": "golden-record-copy",
+    "title": "Golden Record Copy",
+    "category": "curiosities",
+    "era": "Contemporary",
+    "year": 1977,
+    "image": "/images/golden-record-copy.svg",
+    "description": "A replica of a record of greetings, songs and sounds sent into the dark for anyone who might listen.",
+    "provenance": "Produced for an exhibition and added in 1999.",
+    "relatedArtifacts": [
+      "sputnik-pocket-model",
+      "lost-floppy-archive"
+    ],
+    "tags": [
+      "space",
+      "music",
+      "messages"
+    ]
+  },
+  {
+    "id": "lost-floppy-archive",
+    "title": "Lost Floppy Archive",
+    "category": "forgotten-technologies",
+    "era": "Contemporary",
+    "year": 1994,
+    "image": "/images/lost-floppy-archive.svg",
+    "description": "A shoebox of floppy disks, labelled in felt tip, that hold stories nobody can open now.",
+    "provenance": "Donated anonymously in 2011.",
+    "relatedArtifacts": [
+      "golden-record-copy"
+    ],
+    "tags": [
+      "computing",
+      "memory",
+      "obsolete"
+    ]
+  },
+  {
+    "id": "whale-ear-bone-bell",
+    "title": "Whale Ear-Bone Bell",
+    "category": "oddities",
+    "era": "Prehistoric",
+    "year": -9000,
+    "image": "/images/whale-ear-bone-bell.svg",
+    "description": "A dense, ringing ear bone from a whale, strung on sinew and used as a bell by coastal hunters.",
+    "provenance": "Washed from an eroding shore bank; donated by a beachcomber in 1963.",
+    "relatedArtifacts": [
+      "amber-moth",
+      "bone-flute-of-the-glacier"
+    ],
+    "tags": [
+      "bone",
+      "sound",
+      "sea"
+    ]
+  }
+]

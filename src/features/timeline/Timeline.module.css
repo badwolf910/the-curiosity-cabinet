@@ -1,0 +1,9 @@
+.track { display: flex; flex-direction: column; gap: var(--space-5); margin: var(--space-5) 0; }
+.era { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-gold); border-radius: var(--radius); padding: var(--space-4); }
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.item { display: flex; flex-direction: column; }
+.year { font-size: var(--text-sm); color: var(--color-ink-muted); }
+@media (min-width: 64rem) {
+  .track { flex-direction: row; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: var(--space-4); }
+  .era { flex: 0 0 18rem; scroll-snap-align: start; border-left-width: 1px; border-top: 4px solid var(--color-gold); }
+}
