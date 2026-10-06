@@ -9,6 +9,54 @@ export const CATEGORIES = [
 // year: negative for BCE; hue drives the specimen-plate tint.
 export const ARTIFACTS = [
   {
+    id: 'agatized-crinoid-columnal', title: 'Agatized Crinoid Columnal', category: 'natural', flagship: true,
+    year: -350000000, yearLabel: 'c. 330–350 million years ago', origin: 'Near Keokuk, Iowa, USA', glyph: '❋', hue: 205,
+    image: '/images/crinoid-columnal.jpg', crop: { zoom: 2.2, x: 0.77, y: 0.517 },
+    summary: 'A sea-lily fossil from roadside gravel whose centre became a five-pointed star of banded agate.',
+    story: 'A fossil found in roadside gravel near Keokuk, Iowa, preserved as a column of stacked segments with a star-shaped core of silica.',
+    facts: ['Five-fold symmetry inherited from the living animal', 'Concentric silica bands grew inward from the stem’s opening', 'Found in gravel from a local quarry'],
+    tags: ['fossil', 'crinoid', 'agate', 'iowa', 'mississippian'], related: ['ammonite', 'lichtenberg-figure', 'mantis-shrimp-eye'],
+    feature: {
+      subtitle: 'A fossil found in roadside gravel near Keokuk, Iowa',
+      discovery: [
+        'In 2025, while living a few miles northwest of Keokuk, Iowa, I noticed an unusual fossil in freshly spread road gravel. The specimen displayed a striking five-fold pattern unlike any crinoid fossil I had previously encountered.',
+        'Further searching uncovered a second specimen and numerous smaller fragments from the same gravel source, suggesting the material originated from a fossil-rich quarry layer somewhere in the region.',
+      ],
+      specimen: [
+        { label: 'Location', items: ['Southeastern Iowa', 'Near Keokuk', 'Found in road gravel sourced from a local quarry'] },
+        { label: 'Age', items: ['Likely Mississippian Period', 'Approximately 330–350 million years old'] },
+        { label: 'Classification', items: ['Crinoid (sea lily)', 'Echinoderm'] },
+      ],
+      unusual: 'Most crinoid stem fossils appear as simple circular or star-shaped sections. This specimen preserves an unusual pattern of concentric silica bands that follow the original pentaradial symmetry of the animal.',
+      expert: {
+        quote: 'Very pretty specimen! I am guessing that the fossil originally had a star-shaped opening in the columnal (stem) or bottom of the calyx (body of the crinoid). This opening was then filled in with silica (quartz) and multiple layers kept growing around it, creating a very nice star-pattern agate.',
+        name: 'Paul Mayer', role: 'Collections Manager, Fossil Invertebrates, The Field Museum',
+      },
+      views: [
+        { title: 'Side view', text: 'Shows the stacked columnal structure.', crop: { zoom: 2.4, x: 0.34, y: 0.51 } },
+        { title: 'Cross section', text: 'Shows the agatized star pattern.', crop: { zoom: 3.2, x: 0.77, y: 0.517 } },
+        { title: 'Second specimen', text: 'Likely represents the same fossilization process at an earlier or less completely agatized stage.', crop: { zoom: 1.1, x: 0.55, y: 0.52 } },
+      ],
+      chain: [
+        { label: 'Crinoids', q: 'Crinoid' },
+        { label: 'Mississippian Seas', q: 'Mississippian (geology)' },
+        { label: 'Keokuk Limestone', q: 'Keokuk Limestone' },
+        { label: 'Echinoderms', q: 'Echinoderm' },
+        { label: 'Agatization', q: 'Petrified wood agatization' },
+        { label: 'Fossil Preservation', q: 'Fossilization' },
+      ],
+      journey: [
+        { icon: '🪸', when: '350 million years ago', text: 'Crinoid lives in a shallow tropical sea covering what is now Iowa.' },
+        { icon: '⚱️', when: 'After death', text: 'Skeletal structures become buried in marine sediment.' },
+        { icon: '💎', when: 'Fossilization', text: 'Silica-rich fluids replace original material, creating concentric banding.' },
+        { icon: '🚜', when: 'Quarry production', text: 'Fossil-bearing rock extracted and crushed for road aggregate.' },
+        { icon: '🔍', when: 'Modern discovery', text: 'Specimen discovered in roadside gravel near Keokuk, Iowa.' },
+        { icon: '📨', when: 'Scientific investigation', text: 'Photos sent to museum specialists and paleontologists.' },
+        { icon: '🏛', when: 'Curiosity Cabinet', text: 'Added to the digital collection.' },
+      ],
+    },
+  },
+  {
     wiki: 'Antikythera_mechanism', id: 'antikythera-mechanism', title: 'Antikythera Mechanism', category: 'instruments',
     year: -150, yearLabel: 'c. 150–100 BCE', origin: 'Greece (Aegean Sea)', glyph: '⚙', hue: 38,
     summary: 'A corroded bronze gearbox that modelled the heavens two thousand years before clockwork.',
@@ -78,7 +126,7 @@ export const ARTIFACTS = [
     summary: 'The logarithmic spiral of an extinct sea creature, locked in stone.',
     story: 'Ammonites swam in Mesozoic seas for over 300 million years before vanishing alongside the dinosaurs. Their chambered shells grew in a near-perfect logarithmic spiral. Victorian collectors called them snakestones and believed they were coiled serpents turned to rock.',
     facts: ['Survived three mass extinctions', 'Used to date rock layers', 'Some grew over 2 metres wide'],
-    tags: ['fossil', 'spiral', 'geology', 'marine'], related: ['lichtenberg-figure', 'mantis-shrimp-eye'],
+    tags: ['fossil', 'spiral', 'geology', 'marine'], related: ['lichtenberg-figure', 'mantis-shrimp-eye', 'agatized-crinoid-columnal'],
   },
   {
     wiki: 'Mantis_shrimp', id: 'mantis-shrimp-eye', title: 'Mantis Shrimp Eye', category: 'natural',

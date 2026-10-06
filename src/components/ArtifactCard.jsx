@@ -1,14 +1,19 @@
-import { memo } from 'react';
+import { memo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { categoryById } from '../data/artifacts.js';
 import BookmarkButton from './BookmarkButton.jsx';
 import { useWikiSummary } from '../lib/wiki.js';
+import ImageCrop from './ImageCrop.jsx';
 
 export function Plate({ artifact, size = 'md' }) {
   const wiki = useWikiSummary(artifact.wiki);
+  const [failed, setFailed] = useState(false);
+  const own = artifact.image && !failed;
   return (
     <div className={`plate plate--${size}`} style={{ '--hue': artifact.hue }}>
-      {wiki?.image ? (
+      {own ? (
+        <ImageCrop src={artifact.image} alt={size === 'sm' ? '' : artifact.title} {...artifact.crop} onError={() => setFailed(true)} />
+      ) : wiki?.image ? (
         <img src={wiki.image} alt={size === 'sm' ? '' : artifact.title} loading="lazy" />
       ) : (
         <span aria-hidden="true">{artifact.glyph}</span>

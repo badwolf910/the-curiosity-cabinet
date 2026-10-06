@@ -195,3 +195,33 @@ input:focus-visible, select:focus-visible { outline-offset: 0; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* Flagship feature */
+.plate { position: relative; }
+.crop { position: absolute; left: 50%; top: 50%; max-width: none; height: auto; transform-origin: 0 0; }
+.feature section { margin-bottom: 2rem; }
+.source--story p:last-child { margin-bottom: .5rem; }
+.specs { display: grid; gap: 1rem; margin: 0; }
+@media (min-width: 640px) { .specs { grid-template-columns: repeat(3, 1fr); } }
+.specs > div { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: .9rem 1rem; }
+.specs dt { font: 600 .75rem var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+.specs dd { margin: .4rem 0 0; }
+.specs li { margin-bottom: .3rem; font-size: .95rem; }
+.callout { margin: 0; padding: 1.25rem 1.5rem; background: var(--card); border: 1px solid var(--accent-2); border-radius: var(--radius); box-shadow: var(--shadow); }
+.callout blockquote { margin: 0; font: italic 500 1.25rem/1.5 var(--serif); }
+.callout figcaption { font-size: .9rem; color: var(--muted); }
+.views { display: grid; gap: 1rem; }
+@media (min-width: 640px) { .views { grid-template-columns: repeat(3, 1fr); } }
+.views figure { margin: 0; }
+.views__frame { position: relative; overflow: hidden; aspect-ratio: 1; border-radius: var(--radius); background: var(--paper-2); border: 1px solid var(--line); }
+.views figcaption { display: grid; gap: .15rem; margin-top: .5rem; font-size: .9rem; }
+.chain { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.chain li { display: flex; align-items: center; gap: .5rem; }
+.chain li:not(:last-child)::after { content: '\2192'; color: var(--accent-2); }
+.chain a { display: inline-block; padding: .35rem .85rem; background: var(--card); border: 1px solid var(--line); border-radius: 999px; text-decoration: none; }
+.chain a:hover { background: var(--paper-2); }
+.journey { border-left: 2px solid var(--accent-2); margin-left: .9rem; padding-left: 1.5rem; }
+.journey li { position: relative; display: flex; gap: .75rem; margin-bottom: 1rem; }
+.journey__icon { position: absolute; left: -2.65rem; display: grid; place-items: center; width: 2rem; height: 2rem; background: var(--paper); border: 2px solid var(--accent-2); border-radius: 50%; font-size: 1rem; }
+.journey h3 { font-size: 1.15rem; margin: 0; }
+.journey p { margin: 0; }

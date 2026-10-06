@@ -4,6 +4,7 @@ import { Plate } from '../components/ArtifactCard.jsx';
 import BookmarkButton from '../components/BookmarkButton.jsx';
 import RelatedGraph from '../components/RelatedGraph.jsx';
 import DiscussionPanel from '../components/DiscussionPanel.jsx';
+import FeatureStory from '../components/FeatureStory.jsx';
 import NotFound from './NotFound.jsx';
 import { useDocumentTitle } from '../hooks/useDocumentTitle.js';
 import { useWikiSummary } from '../lib/wiki.js';
@@ -34,6 +35,8 @@ export default function Artifact() {
 
       <div className="artifact__cols">
         <div>
+          {a.feature && <FeatureStory artifact={a} />}
+          {!a.feature && (
           <section aria-labelledby="story-h">
             <h2 id="story-h">The story</h2>
             <p className="prose">{a.story}</p>
@@ -44,6 +47,7 @@ export default function Artifact() {
               </blockquote>
             )}
           </section>
+          )}
           <section aria-labelledby="facts-h">
             <h2 id="facts-h">Key facts</h2>
             <ul className="facts">{a.facts.map((f) => <li key={f}>{f}</li>)}</ul>
