@@ -11,7 +11,7 @@ export const ARTIFACTS = [
   {
     id: 'agatized-crinoid-columnal', title: 'Agatized Crinoid Columnal', category: 'natural', flagship: true,
     year: -350000000, yearLabel: 'c. 330–350 million years ago', origin: 'Near Keokuk, Iowa, USA', glyph: '❋', hue: 205,
-    image: '/images/crinoid-columnal.jpg', crop: { zoom: 2.2, x: 0.77, y: 0.517 },
+    image: `${import.meta.env.BASE_URL}images/crinoid-columnal.jpg`, crop: { zoom: 2.2, x: 0.77, y: 0.517 },
     summary: 'A sea-lily fossil from roadside gravel whose centre became a five-pointed star of banded agate.',
     story: 'A fossil found in roadside gravel near Keokuk, Iowa, preserved as a column of stacked segments with a star-shaped core of silica.',
     facts: ['Five-fold symmetry inherited from the living animal', 'Concentric silica bands grew inward from the stem’s opening', 'Found in gravel from a local quarry'],
