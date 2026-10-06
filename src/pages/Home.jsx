@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ARTIFACTS, CATEGORIES } from '../data/artifacts.js';
 import ArtifactCard from '../components/ArtifactCard.jsx';
 import { useDocumentTitle } from '../hooks/useDocumentTitle.js';
+import HeroPhoto from '../components/HeroPhoto.jsx';
 
 export default function Home() {
   useDocumentTitle('');
@@ -11,7 +12,8 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <div className="container">
+        <HeroPhoto />
+        <div className="container hero__content">
           <p className="eyebrow">A digital museum</p>
           <h1>Step inside the Curiosity Cabinet</h1>
           <p className="lead">Strange machines, undeciphered scripts, and natural marvels, gathered in one quiet room for the curious.</p>

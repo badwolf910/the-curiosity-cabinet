@@ -74,8 +74,21 @@ input:focus-visible, select:focus-visible { outline-offset: 0; }
 .link-btn { background: none; border: 0; padding: 0; font: inherit; color: var(--accent); text-decoration: underline; cursor: pointer; }
 
 /* Hero */
-.hero { padding: 3.5rem 0 3rem; background: radial-gradient(ellipse at 20% 0%, rgb(184 134 47 / .22), transparent 60%), linear-gradient(var(--paper-2), transparent); border-bottom: 1px solid var(--line); animation: fade .8s ease both; }
-.hero h1 { max-width: 14ch; }
+.hero { position: relative; overflow: hidden; isolation: isolate; padding: 5rem 0; min-height: 28rem; display: grid; align-items: center; color: #f4ecdc; border-bottom: 1px solid #1a110a; animation: fade .8s ease both; background: #1a110a; }
+.hero__photo { position: absolute; inset: 0; z-index: -2; background-size: 118%; background-position: 50% 55%; background-repeat: no-repeat; filter: sepia(.55) contrast(1.05); animation: drift 40s ease-in-out infinite alternate; }
+.hero::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgb(18 10 4 / .88) 0%, rgb(18 10 4 / .7) 50%, rgb(18 10 4 / .5) 100%), radial-gradient(ellipse at center, transparent 40%, rgb(0 0 0 / .55) 100%); }
+.hero__content { position: relative; }
+.hero h1 { max-width: 14ch; color: #fbf3df; text-shadow: 0 2px 18px rgb(0 0 0 / .5); }
+.hero .lead { color: #e6d8bb; }
+.hero .eyebrow { color: #e0b055; }
+.hero .btn { background: #e0b055; border-color: #e0b055; color: #2a1a0a; }
+.hero .btn:hover { background: #f0c46a; }
+.hero .btn--ghost { background: transparent; color: #f4ecdc; border-color: rgb(244 236 220 / .6); }
+.hero .btn--ghost:hover { background: rgb(244 236 220 / .15); color: #fff; }
+.hero__credit { position: absolute; right: .75rem; bottom: .5rem; font-size: .7rem; color: rgb(244 236 220 / .6); text-decoration: none; }
+.hero__credit:hover { color: #fff; text-decoration: underline; }
+@keyframes drift { from { background-position: 45% 55%; } to { background-position: 55% 52%; } }
+@media (max-width: 700px) { .hero__photo { background-size: cover; } }
 
 /* Grids and cards */
 .grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); margin-top: 1rem; }
