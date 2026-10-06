@@ -31,6 +31,8 @@ export function computeLayout(
     .map((e) => [index.get(e.source), index.get(e.target)] as const)
     .filter((l): l is readonly [number, number] => l[0] !== undefined && l[1] !== undefined);
   const spring = Math.min(width, height) / 4;
+  // Larger graphs need proportionally stronger repulsion to avoid clumping.
+  const repulsion = 1800 * Math.max(1, ids.length / 6) ** 2;
 
   for (let step = 0; step < iterations; step++) {
     const cooling = 1 - step / iterations;
@@ -46,7 +48,7 @@ export function computeLayout(
           dy = 0.1 * (j + 1);
           dist = Math.hypot(dx, dy);
         }
-        const force = (1800 / (dist * dist)) * cooling;
+        const force = (repulsion / (dist * dist)) * cooling;
         a.vx += (dx / dist) * force;
         a.vy += (dy / dist) * force;
         b.vx -= (dx / dist) * force;

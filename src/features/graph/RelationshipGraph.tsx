@@ -7,8 +7,8 @@ import type { GraphEdge } from '@/utils/forceLayout';
 import { getRelated } from '@/utils/artifacts';
 import styles from './RelationshipGraph.module.css';
 
-const W = 720;
-const H = 480;
+const BASE_W = 720;
+const BASE_H = 480;
 const COLORS: Record<string, string> = {
   curiosities: '#c9a24b',
   'scientific-instruments': '#8a6f4d',
@@ -23,7 +23,7 @@ export function RelationshipGraph({ focusId }: { focusId?: string }) {
   const navigate = useNavigate();
   const svgRef = useRef<SVGSVGElement>(null);
 
-  const { nodes, edges, items } = useMemo(() => {
+  const { nodes, edges, items, w, h } = useMemo(() => {
     const focus = artifacts.find((a) => a.id === focusId);
     const items = focus ? [focus, ...getRelated(artifacts, focus)] : artifacts;
     const present = new Set(items.map((a) => a.id));
@@ -38,7 +38,10 @@ export function RelationshipGraph({ focusId }: { focusId?: string }) {
         }
       }),
     );
-    return { items, edges, nodes: computeLayout(items.map((a) => a.id), edges, W, H) };
+    const scale = Math.max(1, Math.sqrt(items.length / 8));
+    const w = Math.round(BASE_W * scale);
+    const h = Math.round(BASE_H * scale);
+    return { items, edges, w, h, nodes: computeLayout(items.map((a) => a.id), edges, w, h) };
   }, [artifacts, focusId]);
 
   const pos = new Map(nodes.map((n) => [n.id, n]));
@@ -62,7 +65,7 @@ export function RelationshipGraph({ focusId }: { focusId?: string }) {
     <div>
       <svg
         ref={svgRef}
-        viewBox={`0 0 ${W} ${H}`}
+        viewBox={`0 0 ${w} ${h}`}
         className={styles.svg}
         role="group"
         aria-label="Graph of related artifacts. Use arrow keys to move between nodes and Enter to open one."
