@@ -96,7 +96,8 @@ input:focus-visible, select:focus-visible { outline-offset: 0; }
 
 .plate { display: grid; place-items: center; background: radial-gradient(circle at 30% 25%, hsl(var(--hue) 55% 82%), hsl(var(--hue) 40% 62%)), var(--noise); color: hsl(var(--hue) 55% 22%); font-family: var(--serif); }
 .plate { overflow: hidden; }
-.plate img:not(.crop) { width: 100%; height: 100%; object-fit: contain; padding: 12px; animation: fade .6s ease both; }
+.plate img:not(.crop) { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 12px; animation: fade .6s ease both; }
+.plate--sm img:not(.crop) { padding: 6px; }
 .source { margin: 1.5rem 0 0; padding: .5rem 1.25rem; border-left: 3px solid var(--accent-2); background: var(--paper-2); border-radius: 0 10px 10px 0; font-size: .95rem; }
 .source footer { font-size: .8rem; color: var(--muted); margin-bottom: .5rem; }
 .plate--md { aspect-ratio: 16 / 9; font-size: 3.5rem; border-bottom: 1px solid var(--line); }
