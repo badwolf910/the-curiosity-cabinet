@@ -30,6 +30,9 @@ export default function Artifact() {
           <h1>{a.title}</h1>
           <p className="lead">{a.summary}</p>
           <BookmarkButton id={a.id} title={a.title} withLabel className="btn btn--ghost" />
+          {a.imageCredit && (
+            <p className="credit muted">Image: <a href={a.imageCredit.url} target="_blank" rel="noreferrer">{a.imageCredit.text}</a></p>
+          )}
         </div>
       </header>
 
@@ -40,6 +43,12 @@ export default function Artifact() {
           <section aria-labelledby="story-h">
             <h2 id="story-h">The story</h2>
             <p className="prose">{a.story}</p>
+            {a.image && wiki?.image && (
+              <figure className="aside-figure">
+                <img src={wiki.image} alt={`Portrait related to ${a.title}`} loading="lazy" />
+                <figcaption className="muted">The makers, from Wikipedia</figcaption>
+              </figure>
+            )}
             {wiki?.extract && (
               <blockquote className="source">
                 <p>{wiki.extract}</p>

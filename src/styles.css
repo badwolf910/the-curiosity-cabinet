@@ -230,3 +230,7 @@ input:focus-visible, select:focus-visible { outline-offset: 0; }
 .journey__icon { position: absolute; left: -2.65rem; display: grid; place-items: center; width: 2rem; height: 2rem; background: var(--paper); border: 2px solid var(--accent-2); border-radius: 50%; font-size: 1rem; }
 .journey h3 { font-size: 1.15rem; margin: 0; }
 .journey p { margin: 0; }
+.aside-figure { margin: 1.25rem 0; max-width: 260px; }
+.aside-figure img { width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); background: var(--card); }
+.aside-figure figcaption { font-size: .8rem; margin-top: .3rem; }
+.credit { font-size: .8rem; margin: .75rem 0 0; }

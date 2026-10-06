@@ -159,6 +159,8 @@ export const ARTIFACTS = [
   {
     wiki: 'Leopold_and_Rudolf_Blaschka', id: 'blaschka-glass', title: 'Blaschka Glass Sea Creatures', category: 'art',
     year: 1880, yearLabel: '1863–1890', origin: 'Dresden, Germany', glyph: '✺', hue: 190,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Museum_Histoire_Naturelle_Geneva_Blaschka_Scyphozoa_Jellyfish_21102014_2.jpg?width=900',
+    imageCredit: { text: 'Blaschka jellyfish models, Muséum d’histoire naturelle de Genève (CC0)', url: 'https://commons.wikimedia.org/wiki/File:Museum_Histoire_Naturelle_Geneva_Blaschka_Scyphozoa_Jellyfish_21102014_2.jpg' },
     summary: 'Anatomically exact glass jellyfish and anemones, made when preservation methods failed.',
     story: 'Leopold and Rudolf Blaschka crafted over 10,000 models for universities and museums, because soft-bodied marine animals lose colour and shape in jars. Their lampworking technique died with them, and curators still cannot fully reproduce it.',
     facts: ['Made without moulds', 'Modelled from live specimens', 'Collections at Harvard and Cornell'],

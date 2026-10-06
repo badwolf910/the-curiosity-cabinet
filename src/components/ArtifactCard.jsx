@@ -12,8 +12,10 @@ export function Plate({ artifact, size = 'md' }) {
   const crop = size === 'sm' ? artifact.cropSm ?? artifact.crop : artifact.crop;
   return (
     <div className={`plate plate--${size}`} style={{ '--hue': artifact.hue }}>
-      {own ? (
+      {own && crop ? (
         <ImageCrop src={artifact.image} alt={size === 'sm' ? '' : artifact.title} {...crop} onError={() => setFailed(true)} />
+      ) : own ? (
+        <img src={artifact.image} alt={size === 'sm' ? '' : artifact.title} loading="lazy" onError={() => setFailed(true)} />
       ) : wiki?.image ? (
         <img src={wiki.image} alt={size === 'sm' ? '' : artifact.title} loading="lazy" />
       ) : (
